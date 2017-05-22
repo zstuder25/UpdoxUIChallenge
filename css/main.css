@@ -3,12 +3,37 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#header h1{
+    margin-bottom: 0em;
+}
+
+#header p{
+    margin-top: 0em;
+}
+
+ul {
+  list-style-type: none;
+}
+
 #createProvider{
     background-color: white;
     width: 20%;
+    float: left;
+    display: inline-block;
+    margin-right: 10%;
 }
 
 #providerList{
     background-color: white;
     width: 70%;
+    float: left;
+    display: inline-block;
+}
+
+#name{
+    font-weight: bold;
+}
+
+#specialty{
+    float: right;
 }

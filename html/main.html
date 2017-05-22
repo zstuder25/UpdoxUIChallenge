@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Provider Directory</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
     <script src="../js/provider.js"></script>
     <script src="../js/main.js"></script>
 </head>
@@ -31,10 +33,16 @@
             </form>
         </div>
 
-        <div id="providerList">
-            <ul id="providers">
-
-            </ul>
+        <div id="providerList" class="display">
+            <table id="providers">
+                <thead>
+                    <tr>
+                        <th>Provider</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
