@@ -1,0 +1,14 @@
+body{
+    background-color: #DCDCDC;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#createProvider{
+    background-color: white;
+    width: 20%;
+}
+
+#providerList{
+    background-color: white;
+    width: 70%;
+}
