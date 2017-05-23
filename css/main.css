@@ -1,5 +1,5 @@
 body{
-    background-color: #DCDCDC;
+    background-color: #DCDCDC !Important;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -11,27 +11,32 @@ body{
     margin-top: 0em;
 }
 
-ul {
-  list-style-type: none;
-}
-
 #createProvider{
     background-color: white;
-    width: 20%;
+    width: 23%;
     float: left;
-    display: inline-block;
-    margin-right: 10%;
+    margin-right: 2%;
+    box-shadow: 3px 3px 3px 3px grey;
+}
+
+#createProvider form{
+    margin-bottom: 5%;
 }
 
 #providerList{
     background-color: white;
-    width: 70%;
+    width: 75%;
     float: left;
     display: inline-block;
+    box-shadow: 3px 3px 3px 3px grey;
 }
 
 #name{
     font-weight: bold;
+}
+
+#email{
+    font-weight: normal;
 }
 
 #specialty{

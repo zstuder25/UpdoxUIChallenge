@@ -5,8 +5,10 @@
     <title>Provider Directory</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../js/provider.js"></script>
     <script src="../js/main.js"></script>
 </head>
@@ -17,27 +19,39 @@
     </div>
 
     <div>
-        <div id="createProvider">
-            <form action="TODO">
-                First Name<br>
-                <input type="text" name="firstname"><br>
-                Last Name<br>
-                <input type="text" name="lastname"><br>
-                Email Address<br>
-                <input type="text" name="email"><br>
-                Specialty<br>
-                <input type="text" name="specialty"><br>
-                Practice Name<br>
-                <input type="text" name="practicename"><br>
-                <input type="submit" value="Submit">
+        <div id="createProvider" class="container">
+            <form id="addProvider" action="main.html" class="form-inline">
+                <div class="form-group">
+                    <label for="first_name">First Name</label><br>
+                    <input type="text" class="form-control" id="first_name" placeholder="Enter First Name" name="first_name">
+                </div><br>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label><br>
+                    <input type="text" class="form-control" id="last_name" placeholder="Enter Last Name" name="last_name">
+                </div><br>
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                </div><br>
+                <div class="form-group">
+                    <label for="speciality">Speciality</label><br>
+                    <input type="text" class="form-control" id="speciality" placeholder="Enter Speciality" name="speciality">
+                </div><br>
+                <div class="form-group">
+                    <label for="practice_name">Practice Name</label><br>
+                    <input type="text" class="form-control" id="practice_name" placeholder="Enter Practice Name" name="practice_name">
+                </div><br><br>
+                <button type="submit" class="btn btn-default">Submit</button>
             </form>
         </div>
 
         <div id="providerList" class="display">
-            <table id="providers">
+            <table id="providers" class="table-striped">
                 <thead>
+                    <h3>Provider</h3>
                     <tr>
-                        <th>Provider</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
