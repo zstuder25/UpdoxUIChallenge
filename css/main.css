@@ -21,24 +21,34 @@ body{
 
 #createProvider form{
     margin-bottom: 5%;
+    padding: 2% 2% 0% 0%;
 }
 
 #providerList{
     background-color: white;
-    width: 75%;
+    width: 70%;
     float: left;
     display: inline-block;
     box-shadow: 3px 3px 3px 3px grey;
+    padding: 0% 3%;
 }
 
-#name{
+.name{
     font-weight: bold;
 }
 
-#email{
+.email{
     font-weight: normal;
 }
 
-#specialty{
+.specialty1{
+    float: right;
+    text-align:right;
+}
+
+#remove{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 3%;
     float: right;
 }

@@ -20,22 +20,22 @@
 
     <div>
         <div id="createProvider" class="container">
-            <form id="addProvider" action="main.html" class="form-inline">
+            <form id="addProvider" action="main.html" class="form-inline" method="post">
                 <div class="form-group">
                     <label for="first_name">First Name</label><br>
-                    <input type="text" class="form-control" id="first_name" placeholder="Enter First Name" name="first_name">
+                    <input type="text" class="form-control" id="first_name" required placeholder="Enter First Name" name="first_name">
                 </div><br>
                 <div class="form-group">
                     <label for="last_name">Last Name</label><br>
-                    <input type="text" class="form-control" id="last_name" placeholder="Enter Last Name" name="last_name">
+                    <input type="text" class="form-control" id="last_name" required placeholder="Enter Last Name" name="last_name">
                 </div><br>
                 <div class="form-group">
-                    <label for="email">Email</label><br>
-                    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                    <label for="email_address">Email</label><br>
+                    <input type="email" class="form-control" id="email_address" required placeholder="Enter Email" name="email_address">
                 </div><br>
                 <div class="form-group">
-                    <label for="speciality">Speciality</label><br>
-                    <input type="text" class="form-control" id="speciality" placeholder="Enter Speciality" name="speciality">
+                    <label for="specialty">Speciality</label><br>
+                    <input type="text" class="form-control" id="specialty" placeholder="Enter Specialty" name="specialty">
                 </div><br>
                 <div class="form-group">
                     <label for="practice_name">Practice Name</label><br>
@@ -46,9 +46,9 @@
         </div>
 
         <div id="providerList" class="display">
+            <h3>Provider</h3>
             <table id="providers" class="table-striped">
                 <thead>
-                    <h3>Provider</h3>
                     <tr>
                         <th></th>
                         <th></th>
@@ -57,7 +57,9 @@
                 <tbody id="tableBody">
                 </tbody>
             </table>
+            <input id="remove" type="button" value="Remove" class="btn btn-default" onclick="removeEntries()"/>
         </div>
+
     </div>
 </body>
 </html>
