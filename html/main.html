@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+    <script charset="utf8" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../js/provider.js"></script>
     <script src="../js/main.js"></script>
@@ -20,6 +20,7 @@
 
     <div>
         <div id="createProvider" class="container">
+            <h3>Create Provider</h3>
             <form id="addProvider" action="main.html" class="form-inline" method="post">
                 <div class="form-group">
                     <label for="first_name">First Name</label><br>
@@ -46,12 +47,15 @@
         </div>
 
         <div id="providerList" class="display">
-            <h3>Provider</h3>
+            <h3>Providers</h3>
             <table id="providers" class="table-striped">
                 <thead>
                     <tr>
                         <th></th>
-                        <th></th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Speciality</th>
+                        <th>Practice Name</th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
